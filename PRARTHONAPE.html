@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;bn&quot;&gt;
+&lt;head&gt;
+&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;
+&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&nbsp; &nbsp; &lt;title&gt;prarthona | Purnangsu Education&lt;/title&gt;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; &lt;!-- Favicon --&gt;
+&nbsp; &nbsp; &lt;link rel=&quot;icon&quot; href=&quot;https://rudralibrary.github.io/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; &lt;style&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&amp;display=swap');
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; body {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: url('https://www.toptal.com/designers/subtlepatterns/uploads/dark_embroidery.png');
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: 'Noto Serif Bengali', serif;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; animation: fadeIn 2s ease-in-out;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; @keyframes fadeIn {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from { opacity: 0; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to { opacity: 1; }
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .header {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, #000000,#1a1a1a );
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 30px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: bold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .menu {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: relative;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline-block;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .menu-icon {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 28px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 5px 10px;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .menu:hover .menu-icon {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: rotate(90deg);
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .dropdown {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: none;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: absolute;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; right: 0;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 2px solid gold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.8);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 180px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: left;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .dropdown a {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: gold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 12px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: block;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .dropdown a:hover {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: gold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .menu:hover .dropdown {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: block;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .luxury-box {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(145deg, #1a1a1a, #000000);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #e5c100;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 40px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 60%;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 100px auto 30px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 15px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 1px 4px 23px rgba(255, 215, 0, 0.8);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 7px solid #e5c100;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.8;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; h1 {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 49px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: red;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0px 10px 20px rgba(2, 5, 0, 0.8);
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; p {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 22px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; white-space: pre-line;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .signature {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 13px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-style: italic;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 20px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: right;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; /* Comment Box */
+&nbsp; &nbsp; &nbsp; &nbsp; .comment-box {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: black;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 10px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 50%;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 30px auto;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 5px 21px 30px rgba(255, 215, 0, 0.8);
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .comment-box input, .comment-box textarea {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 90%;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 10px 0;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .comment-box button {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: gold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 10px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 18px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 50%;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 5px;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .comment-box button:hover {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: black;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; .footer {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, #1a1a1a, #000000);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: gold;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 15px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 13px;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+.social-box {
+
+
+background: black;
+
+
+color: white;
+padding: 25px;
+border-radius: 12px;
+width: 50%;
+margin: 35px auto;
+box-shadow: 1px 10px 2px rgba(255, 215, 0, 0.8);
+}
+
+
+.social2-box {
+background: black;
+color: yellow;
+padding: 30px;
+border-radius: 5px;
+width: 50%;
+margin: 40px auto;
+box-shadow: 5px 1px 50px rgba(255, 215, 0, 0.8);
+}
+&nbsp;h2 {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 35px;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow:10px 20px 39px rgba(2, 5, 0, 0.8);
+&nbsp; &nbsp; &nbsp; &nbsp; }
+
+
+
+
+&nbsp; &nbsp; &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+&nbsp; &nbsp; &lt;!-- Website Header --&gt;
+&nbsp; &nbsp; &lt;div class=&quot;header&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;Purnangsu Education&lt;/span&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;menu&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class=&quot;menu-icon&quot;&gt;☰&lt;/span&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;dropdown&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://rudralibrary.github.io/rudralibrary1.github.io/&quot;&gt;🏠 Home&lt;/a&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;mailto:purnangsunathmazumder@gmail.com&quot;&gt;📧 Contact Me&lt;/a&gt;
+&nbsp; &nbsp;&lt;a href=&quot;&quot;&gt;Class1️⃣2️⃣&lt;/a&gt;
+&lt;a href=&quot;&quot;&gt;Youtube&lt;/a&gt;
+&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;
+&lt;a href=&quot;&quot;&gt;Facebook&lt;/a&gt;
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+
+
+&nbsp; &nbsp; &lt;!-- Poem Box --&gt;
+&nbsp; &nbsp; &lt;div class=&quot;luxury-box&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;<span lang="hi-IN">প্রার্থনা</span>&lt;/h1&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+<span lang="hi-IN">এই অগ্রহায়ণ মাসে</span>
+&nbsp;<span lang="hi-IN">কে দাড়াবে আমার পাশে</span>?
+<span lang="hi-IN">সবাই ব্যস্ত ধান কাটতে</span>,&nbsp;
+<span lang="hi-IN">কে আসবে আমায় সাহায্য করতে</span>!&nbsp;
+<span lang="hi-IN">পাওয়া যাচ্ছে না দিন মজুর।</span>
+<span lang="hi-IN">কি হবে হুজুর</span>?
+<span lang="hi-IN">এখন যদি তুমি নিয়ে আসো বৃষ্টি</span>,&nbsp;
+<span lang="hi-IN">হয়ে যাবে ধানগুলো থেকে অঙ্কুরের সৃষ্টি।</span>
+<span lang="hi-IN">অধিক বৃষ্টির ফলে&nbsp;</span>
+<span lang="hi-IN">আসবে বন্যা কল কলিয়ে</span>;
+&nbsp;<span lang="hi-IN">কি হবে আমাদের উপায়</span>?
+<span lang="hi-IN">ডুবে যাবে যে ধান গুলো বন্যায়।</span>
+<span lang="hi-IN">কি খাব সারাবছর</span>?
+<span lang="hi-IN">খালি হয়ে যে যাবে আমার ভাড়ার।</span>
+<span lang="hi-IN">তুমি দিন দয়াময়</span>,&nbsp;
+<span lang="hi-IN">কেন হচ্ছ না আমার উপর করুণাময়</span>?
+<span lang="hi-IN">এই কালো বাদলের ডাকে&nbsp;</span>
+<span lang="hi-IN">ভয়ে ঘুম যায় ভেঙে।&nbsp;</span>
+<span lang="hi-IN">মনে হয় এই বুঝি পড়লো জলেরধারা</span>,
+<span lang="hi-IN">ধান কাটতে সাহায্য করবে কারা</span>?
+<span lang="hi-IN">আমি যে একা</span>,&nbsp;
+<span lang="hi-IN">কাটতে পারিনা যে এত বড় বিঘা </span>||
+<span lang="hi-IN">এই অসহায় কৃষকের প্রার্থনা কেনো তুমি শুনো না</span>!
+<span lang="hi-IN">তুমি বিধাতা</span>
+&nbsp;<span lang="hi-IN">তোমার কাছে আছে খাতা </span>|
+<span lang="hi-IN">দেখো তোমার পাপ পূন্যের খাতায়—&nbsp;</span>
+<span lang="hi-IN">করেছি পাপ আমি কোথায়</span>?
+<span lang="hi-IN">তব কেন শুনছো না আমার কথা</span>
+&nbsp;'<span lang="hi-IN">হে জগতের পিতা</span>' <span lang="hi-IN">।।</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;signature&quot;&gt;— Yogi Purnangsu Nath Mazumder&lt;/div&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+
+
+&nbsp; &nbsp; &lt;!-- Comment Box --&gt;
+&nbsp; &nbsp; &lt;div class=&quot;comment-box&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;<span lang="hi-IN">আপনার মতামত লিখুন</span>&lt;/h2&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;form action=&quot;mailto:purnangsunathmazumder@gmail.com&quot; method=&quot;post&quot; enctype=&quot;text/plain&quot;&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;<span lang="hi-IN">আপনার নাম</span>&quot; required&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;textarea name=&quot;message&quot; rows=&quot;4&quot; placeholder=&quot;<span lang="hi-IN">আপনার মন্তব্য লিখুন</span>&quot; required&gt;&lt;/textarea&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;submit&quot;&gt;<span lang="hi-IN">পাঠান</span>&lt;/button&gt;
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;/form&gt;
+&nbsp; &nbsp; &lt;/div&gt;
+&nbsp; &nbsp;&lt;!-- social Box --&gt;
+&nbsp; &lt;div class=&quot;social-box&quot;&gt;
+&lt;h2&gt; Find us !&lt;/h2&gt;
+&lt;a href=&quot;&quot;&gt;Instagram&lt;/a&gt;
+&lt;a href=&quot;&quot;&gt;Facebook&lt;/a&gt;
+
+
+&lt;/div&gt;
+&nbsp; &nbsp;&lt;!-- social 2Box --&gt;
+&nbsp; &lt;div class=&quot;social2-box&quot;&gt;
+&lt;h2&gt;Purnangsu Education &lt;/h2&gt;
+&lt;p&gt; &lt;mark&gt; Yogi Purnangsu Nath Mazumder &lt;/mark&gt;
+is the esteemed CEO and founder of &lt;bold&gt; Purnangsu education &lt;/bold&gt;
+Actually Rudra Library is the old name of the Purnangsu education.
+Actually The CEO Purnangsu Nath changed this website name &lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+&nbsp; &nbsp; &lt;!-- Website Footer --&gt;
+&nbsp; &nbsp; &lt;div class=&quot;footer&quot;&gt;© 2025 Purnangsu Education. All rights reserved.&lt;/div&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
